@@ -1,5 +1,5 @@
 export function renderTemperatureConverter() {
-    return `
+  return `
         <div>
             <h2>Temperature Converter</h2>
             <input type="number" id="celsius" placeholder="Celsius">
@@ -10,11 +10,13 @@ export function renderTemperatureConverter() {
 }
 
 export function initTemperatureConverter() {
-    const celsiusInput = document.getElementById('celsius');
-    const result = document.getElementById('result');
-    document.getElementById('convertToFahrenheit').addEventListener('click', () => {
-        const celsius = parseFloat(celsiusInput.value);
-        const fahrenheit = (celsius * 9/5) + 32;
-        result.textContent = `${celsius}°C is ${fahrenheit}°F`;
+  const celsiusInput = document.getElementById("celsius");
+  const result = document.getElementById("result");
+  document
+    .getElementById("convertToFahrenheit")
+    .addEventListener("click", () => {
+      const celsius = parseFloat(celsiusInput.value);
+      const fahrenheit = (celsius * 9) / 5 + 32;
+      result.textContent = `${celsius}°C is ${fahrenheit}°F`;
     });
 }

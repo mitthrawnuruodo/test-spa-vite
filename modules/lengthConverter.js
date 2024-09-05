@@ -1,5 +1,5 @@
 export function renderLengthConverter() {
-    return `
+  return `
         <div>
             <h2>Length Converter</h2>
             <input type="number" id="meters" placeholder="Meters">
@@ -10,11 +10,11 @@ export function renderLengthConverter() {
 }
 
 export function initLengthConverter() {
-    const metersInput = document.getElementById('meters');
-    const result = document.getElementById('result');
-    document.getElementById('convertToFeet').addEventListener('click', () => {
-        const meters = parseFloat(metersInput.value);
-        const feet = meters * 3.28084;
-        result.textContent = `${meters} meters is ${feet} feet`;
-    });
+  const metersInput = document.getElementById("meters");
+  const result = document.getElementById("result");
+  document.getElementById("convertToFeet").addEventListener("click", () => {
+    const meters = parseFloat(metersInput.value);
+    const feet = meters * 3.28084;
+    result.textContent = `${meters} meters is ${feet} feet`;
+  });
 }
